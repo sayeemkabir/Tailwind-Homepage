@@ -1,0 +1,72 @@
+@font-face {
+    font-family: NeueMontrealbook;
+    src: url(./fonts/PPNeueMontreal-Book.otf);
+  }
+
+  @font-face {
+    font-family: NeueMontrealbold;
+    src: url(./fonts/PPNeueMontreal-Bold.otf);
+  }
+
+  @font-face {
+    font-family: NeueMontrealmedium;
+    src: url(./fonts/PPNeueMontreal-Medium.otf);
+  }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .menuB{
+        @apply hover:scale-110 duration-300 hover:text-purple-700 font-fontRoboto
+    }
+
+    .topButtons{
+        @apply h-[42px] w-[102px] border border-black mt-10
+    }
+
+    .banText{
+        @apply font-fontRoboto font-medium text-7xl mt-5
+    }
+
+    .endBar{
+        @apply h-[58px] w-[172px] bg-white  rounded-[6px] flex justify-center
+    }
+
+
+    .heading2{
+        @apply font-fontRoboto text-h2 font-bold
+    }
+
+    .enroll-btn{
+        @apply w-[182px] h-[58px] bg-paleYellow font-ppMedium text-blacky hover:scale-110 duration-500 hover:text-black rounded-[6px]
+    }
+
+    .pinkInner{
+        @apply font-bold text-h3 text-blacky
+    }
+    .ul-dropdown{
+        @apply list-none flex flex-col justify-center space-y-3
+    }
+
+    .p-dropdown{
+        @apply hover:text-white hover:scale-105 duration-500
+    }
+
+    .li-dropdown{
+        @apply flex space-x-2 hover:bg-slate-600 hover:scale-105 duration-500
+    }
+
+    .listingitem{
+        @apply text-normalText text-[#596966] font-ppMedium
+    }
+
+    .liFooter{
+        @apply text-[#596966] text-normalText font-ppMedium
+    }
+
+    .socials{
+        @apply fill-white group-hover:fill-blacky faceboookIcon duration-500
+    }
+}

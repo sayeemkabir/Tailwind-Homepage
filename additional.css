@@ -1,0 +1,138 @@
+/* #chok{
+    color: red;
+} */
+
+.item1 img{
+    object-fit: contain;
+}
+
+.item1{
+    border-radius: 50%;
+    
+}
+
+.dropdownBar{
+    align-items: center;
+
+}
+
+
+.rightButton{
+    align-items: center;
+
+}
+
+.dropdownContent {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+.parentDiv{
+    justify-content: center;
+}
+
+.pinkyPink{
+    align-items: center;
+}
+
+.dropdown {
+    display: inline-block;
+    height: 60px;
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    visibility: visible;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 169px;
+    background-color: #f9f9f9;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border-radius: 5px;
+    margin-left: 0;
+    margin: auto;
+    margin-left: -12px;
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;    
+  }
+
+  .drpText {
+    text-align: center;
+    font-family: NeueMontrealmedium, Open Sans;
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(0 61 49 / var(--tw-text-opacity));
+}
+
+.drpText-content {
+    text-align: center;
+    font-family: NeueMontrealmedium, Open Sans;
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: 400;
+    --tw-text-opacity: 1;
+    color: rgb(0 61 49 / var(--tw-text-opacity));
+}
+
+
+.alignthisLeft{
+    align-self: center;
+}
+
+.carosal{
+    align-items: center;
+}
+
+.divider{
+    align-self: center;
+}
+
+.thinkingabt{
+    align-items: center;
+}
+
+.object111{
+    align-self: center;
+}
+
+.takeCenter{
+    align-self: center;
+}
+
+.initialPart{
+    border-bottom: 1px solid #DAD0AF;
+    border-top: 1px solid #DAD0AF;
+    align-items: center;
+}
+
+#firstIcon1{
+    align-items: center;
+}
+
+.dropdownBar {
+    align-items: center;
+    background-color: #5BE4CA;
+}
+
+.listingitem:hover{
+    text-decoration: underline;
+}
+
+.liFooter:hover{
+    text-decoration: underline;
+}
