@@ -9,6 +9,31 @@ $(document).ready(function(){
         autoplay: true, 
         autoplayTimeout: 3000,
         autoplayHoverPause: true, 
+        responsiveClass:true,
+        responsive:{
+            390:{
+                items:1,
+                nav: true,
+        margin: 30,
+        dots:true,
+        loop: true, 
+        autoplay: true, 
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true, 
+        responsiveClass:true,
+            },
+            800:{
+                 items: 3,
+        nav: true,
+        margin: 30,
+        dots:true,
+        loop: true, 
+        autoplay: true, 
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true, 
+        responsiveClass:true
+            }
+        }
 
 
 
@@ -58,4 +83,9 @@ console.log("hello")
     
 
         console.log(`tes`)
+
+        $("#toggle").click(function() {
+  $(this).toggleClass("on");
+  $("#menu").slideToggle();
+});
     

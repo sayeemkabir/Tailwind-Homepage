@@ -16,22 +16,59 @@
 		<link rel="stylesheet" href="additional.css" />
 	</head>
 
-	<body>
-		<div class="banner bg-cyanbg w-full h-[736px] relative">
-			<div class="absolute top-[23%] left-[22%]">
+	<body class="bg-white">
+		<div
+			class="banner bg-cyanbg w-full h-[736px] iphone:max-sm:w-full iphone:max-sm:h-[100vh] relative">
+			<div class="absolute top-[23%] left-[22%] iphone:max-sm:hidden">
 				<img src="media/globe.png" alt="world" />
 			</div>
-			<div class="absolute top-[37%] right-[8%]">
+			<div class="absolute top-[37%] right-[8%] iphone:max-sm:hidden">
 				<img src="media/emote.png" alt="emoji" />
 			</div>
-			<div class="menu flex justify-around">
-				<div class="item1 flex h-[24px] w-[22px] bg-paleYellow m-10">
-					<img src="media/logo-icon.svg" alt="site logo" />
-					<p class="font-ppBold pl-[6px] mt-[-4px] text-custFont">
-						dialect
+			<div
+				class="menu flex justify-around iphone:max-sm:justify-between ml-[-30px]">
+				<div
+					class="item1 flex h-[24px] iphone:max-sm:h-6 w-[22px] iphone:max-sm:w-6 bg-paleYellow m-10 bringBoth">
+					<img
+						src="media/logo-icon.svg"
+						alt="site logo"
+						class="iphone:max-sm:h-6 iphone:max-sm:w-6" />
+					<p
+						class="font-ppBold pl-[6px] mt-[-4px] text-custFont iphone:max-sm:text-xl iphone:max-sm:font-semibold bringBoth">
+						Dialect
 					</p>
 				</div>
-				<div class="flex">
+				<div class="flex justify-center align-middle forMobile pr-2">
+					<div class="toggleMenu hidden iphone:max-sm:block">
+						<div id="toggle" class="">
+							<div class="one"></div>
+							<div class="two"></div>
+							<div class="three"></div>
+						</div>
+
+						<div id="menu" class="bg-cyanOpaque">
+							<ul>
+								<li class="menuB2"><a href="#"> How it works</a></li>
+								<li class="menuB2"><a href="#"> Reviews</a></li>
+								<li class="menuB2"><a href="#"> Live Lesson</a></li>
+								<li class="menuB2"><a href="#"> Pricing</a></li>
+							</ul>
+
+							<div>
+								<button
+									class="topButtons text-black hover:bg-black hover:text-white duration-500">
+									Log In
+								</button>
+								<button
+									class="topButtons bg-black text-white hover:bg-transparent hover:text-black duration-500">
+									Sign Up
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="flex iphone:max-sm:hidden">
 					<ul class="flex space-x-[42px]">
 						<button class="menuB">
 							<li>How it works</li>
@@ -47,7 +84,8 @@
 						</button>
 					</ul>
 				</div>
-				<div class="flex space-x-4">
+
+				<div class="flex space-x-4 iphone:max-sm:hidden">
 					<button
 						class="topButtons hover:bg-black hover:text-white duration-500">
 						Log In
@@ -58,20 +96,26 @@
 					</button>
 				</div>
 			</div>
-			<div class="headerBody text-center pt-[104px]">
+			<div class="headerBody text-center pt-[104px] iphone:max-sm:pt-[65px]">
 				<div
-					class="h-114 w-[505px] rounded-figure bg-white m-auto flex justify-center align-middle">
-					<p class="banText font-">Dialect Brings</p>
+					class="h-114 w-[505px] rounded-figure bg-white m-auto flex justify-center align-middle iphone:max-sm:w-80 iphone:max-sm:h-[75px]">
+					<p class="banText iphone:max-sm:banText2">Dialect Brings</p>
 				</div>
-				<div class="flex justify-center pt-5 space-x-5">
-					<div class="w-[378px] h-114 bg-paleYellow rounded-figure">
-						<p class="font-bold text-7xl mt-5">language</p>
+				<div
+					class="flex justify-center pt-5 space-x-5 iphone:max-sm:w-full">
+					<div
+						class="w-[378px] h-114 bg-paleYellow rounded-figure iphone:max-sm:w-40 iphone:max-sm:h-[68px] flex forMobile justify-center">
+						<p class="font-bold text-7xl iphone:max-sm:banText3">
+							language
+						</p>
 					</div>
-					<div class="w-[328px] h-114 rounded-figure bg-white">
-						<p class="banText">learning</p>
+					<div
+						class="w-[328px] h-114 rounded-figure bg-white iphone:max-sm:w-40 iphone:max-sm:h-[68px] flex justify-center">
+						<p class="banText iphone:max-sm:banText3">learning</p>
 					</div>
 				</div>
-				<div class="w-[570px] m-auto text-normalText pt-7">
+				<div
+					class="w-[570px] m-auto text-normalText pt-7 iphone:max-sm:w-[350px]">
 					<p class="font-ppMedium text-black font-normal text-center">
 						Learn a language right here with hundreds of free
 						language-learning lessons. Get access to compact lessons from
@@ -124,18 +168,22 @@
 				</div>
 			</div>
 		</div>
-		<div class="MedAndTxt mt-[170px] flex justify-evenly">
+		<div
+			class="MedAndTxt mt-[170px] iphone:max-sm:mt-[120px] flex justify-evenly iphone:max-sm:block">
 			<div class="imgDiv">
 				<img src="media/women.jpg" alt="Women" />
 			</div>
-			<div class="rightSide mt-[70px]">
-				<div class="w-[570px] h-[104px]">
-					<h2 class="heading2 font-bold">
+			<div
+				class="rightSide mt-[70px] iphone:max-sm:mt-12 iphone:max-sm:ml-2">
+				<div
+					class="w-[570px] h-[104px] iphone:max-sm:w-full iphone:max-sm:h-auto iphone:max-sm:pb-5">
+					<h2 class="heading2-2">
 						The <span class="text-givenCyan">world’s #1</span> way to
 						learn a language
 					</h2>
 				</div>
-				<div class="w-[570px] h-[84] mt-5">
+				<div
+					class="w-[570px] h-[84] mt-5 iphone:max-sm:w-full iphone:max-sm:pr-2 iphone:max-sm:pb-2">
 					<p
 						class="font-normal text-normalText font-ppBold text-[#596966]">
 						Learning with us is fun, and research shows that it works!
@@ -143,7 +191,8 @@
 						new levels while gaining real-world communication skills.
 					</p>
 				</div>
-				<div class="w-[570px] h-14 mt-4">
+				<div
+					class="w-[570px] h-14 mt-4 iphone:max-sm:pr-2 iphone:max-sm:w-full">
 					<p class="font-ppBold text-normalText text-[#596966]">
 						Learn a language right here with hundreds of free
 						language-learning lessons. Get access to compact lessons from
@@ -153,16 +202,19 @@
 			</div>
 		</div>
 		<div class="flex justify-center">
-			<div class="feature mt-[190px] w-[1170px] h-[652px]">
-				<div class="headingPart text-center w-[570px] h-[104px] m-auto">
-					<h2 class="heading2">
+			<div class="feature mt-[190px] w-[1170px] iphone:max-sm:mt-[130px]">
+				<div
+					class="headingPart text-center w-[570px] h-[104px] m-auto iphone:max-sm:w-full iphone:max-sm:h-auto">
+					<h2 class="heading2 iphone:max-sm:heading2-2">
 						<span class="text-givenCyan">Changing</span> the way people
 						learn new languages
 					</h2>
 				</div>
-				<div class="flex justify-evenly flex-wrap mt-[70px]">
+				<div
+					class="flex justify-evenly flex-wrap mt-[70px] iphone:max-sm:h-auto iphone:max-sm:block iphone:max-sm:mt-[40px] iphone:max-sm:space-y-5">
 					<div class="w-[370px] h-[224px] bg-featBg rounded-xl mb-3">
-						<div class="parentDiv p-5 flex flex-col">
+						<div
+							class="parentDiv p-5 flex flex-col iphone:max-sm:pr-2 pt-2">
 							<div class="imgClass mt-2">
 								<img src="media/worldwide.png" alt="World" />
 							</div>
@@ -260,15 +312,18 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex justify-between w-[1170px] h-[380px] mt-[190px] m-auto">
+		<div
+			class="flex justify-betweenn flex-wrap w-[1170px] h-auto mt-[190px] m-auto iphone:max-sm:w-96 iphone:max-sm:block iphone:max-sm:h-auto iphone:max-sm:mt-[100px]">
 			<div class="item1">
-				<div class="head w-[104px]">
-					<h2 class="font-bold text-h2 text-[#003D31] w-[570px]">
+				<div
+					class="head w-[104px] iphone:max-sm:w-full iphone:max-sm:h-auto pl-2">
+					<h2
+						class="font-bold text-h2 text-[#003D31] w-[570px] iphone:max-sm:w-full iphone:max-sm:h-auto iphone:max-sm:text-mobile-h2 pb-5">
 						Boost your learning with
 						<span class="text-givenCyan">Dialect</span> plus
 					</h2>
 				</div>
-				<div class="w-[570px] h-[84px] mt-5">
+				<div class="w-[570px] h-[84px] mt-5 iphone:max-sm:w-full pr-2 pl-2">
 					<p
 						class="font-ppMedium font-normal text-normalText text-[#596966]">
 						Learning with us is fun, and research shows that it works!
@@ -277,41 +332,42 @@
 						14 days!
 					</p>
 				</div>
-				<div class="btn mt-[55px]">
+				<div class="hidden iphone:max-sm:block w-full h-7"></div>
+				<div class="btn mt-[55px] pl-2">
 					<button class="enroll-btn">Start Learning</button>
 				</div>
 			</div>
-			<div class="item2">
+			<div class="item2 iphone:max-sm:mt-7">
 				<div class="imgRight">
 					<img src="media/read-book.png" alt="Women Reading" />
 				</div>
 			</div>
 		</div>
 		<div
-			class="pinkyPink flex justify-evenly h-[246px] bg-darkPink mt-[170px]">
+			class="pinkyPink flex justify-evenly h-[246px] bg-darkPink mt-[170px] iphone:max-sm:mt-[70px] iphone:max-sm:flex iphone:max-sm:flex-col iphone:max-sm:h-96">
 			<div class="icon">
 				<img src="media/union.svg" alt="Language" />
 			</div>
 			<div>
-				<p class="pinkInner">70,000 lessons taught</p>
+				<p class="pinkInner2">70,000 lessons taught</p>
 			</div>
 			<div>
-				<p class="pinkInner">40,000+ students enrolled</p>
+				<p class="pinkInner2">40,000+ students enrolled</p>
 			</div>
 			<div>
-				<p class="pinkInner">11 languages</p>
+				<p class="pinkInner2">11 languages</p>
 			</div>
 			<div class="icon2">
 				<img src="media/chinese.svg" alt="Logo Chinese" />
 			</div>
 		</div>
-		<div class="h-[741px] bg-featBg text-center pt-[100px]">
-			<div class="text-center m-auto w-570 h-[128px]">
-				<h2 class="font-bold text-h2 text-blacky">
+		<div class="h-auto bg-featBg text-center pt-[100px]">
+			<div class="text-center m-auto w-570 iphone:max-sm:w-full">
+				<h2 class="font-bold text-h2 text-blacky iphone:max-sm:heading2-2">
 					People love <span class="text-givenCyan">Dialect</span>
 				</h2>
 				<p
-					class="font-ppMedium font-normal text-center text-normalText mt-5">
+					class="font-ppMedium font-normal text-center text-normalText mt-5 pr-2 pl-2">
 					Learning with us is fun, and research shows that it works!
 					Learning a language on Dialect is completely free.
 				</p>
@@ -497,24 +553,27 @@
 			</div>
 		</div>
 
-		<div class="w-full h-[388px] bg-givenCyan">
-			<div class="cyanDive flex justify-evenly h-full">
+		<div class="w-full h-[388px] bg-givenCyan iphone:max-sm:h-[420px]">
+			<div
+				class="cyanDive flex justify-evenly h-full iphone:max-sm:block iphone:max-sm:pl-2">
 				<div
-					class="object111 w-[472px] h-[188px] flex flex-col justify-evenly">
+					class="object111 w-[472px] h-[188px] flex flex-col justify-evenly iphone:max-sm:w-full iphone:max-sm:h-auto iphone:max-sm:pt-4">
 					<div
-						class="thinkingabt w-[373px] h-[82px] bg-white text-center flex rounded-xl">
-						<h2 class="font-medium m-auto text-h2 text-blacky">
+						class="thinkingabt w-[373px] iphone:max-sm:w-72 iphone:max-sm:h-16 h-[82px] bg-white text-center flex rounded-xl">
+						<h2 class="font-medium m-auto text-4xl text-blacky">
 							Thinking about
 						</h2>
 					</div>
-					<div class="w-[472px] h-[84px] bg-featBg flex rounded-xl">
-						<h2 class="font-bold m-auto text-h2 text-blacky">
+					<div
+						class="w-[472px] h-[84px] flex rounded-xl bg-paleYellow iphone:max-sm:w-[350px] iphone:max-sm:h-16 mt-3">
+						<h2
+							class="font-bold iphone:max-sm:font-medium m-auto text-4xl text-blacky">
 							language learning?
 						</h2>
 					</div>
 				</div>
 				<div
-					class="w-[570px] h-[182px] flex flex-col justify-between takeCenter">
+					class="w-[570px] h-[182px] flex flex-col justify-between takeCenter iphone:max-sm:w-full iphone:max-sm:pr-2 iphone:max-sm:pl-2 iphone:max-sm:mt-5">
 					<div class="para">
 						<p class="font-ppMedium text-normalText text-blacky">
 							Learn a language right here with hundreds of free
@@ -523,9 +582,11 @@
 							speakers to help you master words faster.
 						</p>
 					</div>
-					<div class="w-[374px] h-[58px] flex justify-between">
+					<div
+						class="w-[374px] h-[58px] flex justify-between iphone:max-sm:justify-center iphone:max-sm:mt-6 iphone:max-sm:space-x-3">
 						<div class="dropdown">
-							<div class="w-[172px] h-[52px] bg-white rounded-md">
+							<div
+								class="w-[172px] h-[52px] iphone:max-sm:h-[58px] bg-white rounded-md">
 								<p class="drpText">Select Language</p>
 							</div>
 							<div class="dropdown-content">
@@ -555,10 +616,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="w-full h-[1186px]">
+		<div class="w-full min-h-[1186px] iphone:max-sm:h-auto">
 			<div class="w-full h-[300px] flex justify-center align-middle">
 				<div class="w-570 h-[100px] m-auto flex flex-col justify-between">
-					<h2 class="font-bold text-h2 text-blacky text-center">
+					<h2
+						class="font-bold text-h2 text-blacky text-center iphone:max-sm:heading2-2">
 						Have any <span class="text-givenCyan">questions</span>?
 					</h2>
 					<p class="font-normal font-ppMedium text-normalText text-center">
@@ -576,8 +638,9 @@
 				</div>
 			</div>
 			<div
-				class="h-[654px] w-full initialPart flex justify-center align-middle">
-				<div class="container w-[825px] h-[544px] flex justify-between">
+				class="min-h-[654px] iphone:max-sm:h-auto w-full initialPart flex justify-center align-middle">
+				<div
+					class="container w-[825px] iphone:max-sm:w-full iphone:max-sm:pl-2 iphone:max-sm:h-auto min-h-[544px] flex justify-between">
 					<div class="col1">
 						<p class="font-bold text-smlTitle text-blacky">Dialect</p>
 						<ul class="list-none mt-6 space-y-[18px]">
@@ -588,7 +651,7 @@
 						</ul>
 					</div>
 
-					<div class="col2">
+					<div class="col2 iphone:max-sm:ml-2">
 						<p class="font-bold text-smlTitle text-blacky">Learn More</p>
 						<ul class="list-none mt-6 space-y-[18px]">
 							<li class="listingitem">Learn English</li>
@@ -618,34 +681,59 @@
 					<div class="col4">
 						<p class="font-bold text-smlTitle text-blacky">Support</p>
 						<ul class="list-none mt-6 space-y-[18px]">
-							<li class="listingitem">Contact</li>
-							<li class="listingitem">Privacy</li>
-							<li class="listingitem">Terms</li>
-							<li class="listingitem">Affiliate Program</li>
+							<li class="listingitem"><a href="#">Contact</a></li>
+							<li class="listingitem"><a href="#"> Privacy</a></li>
+							<li class="listingitem"><a href="#">Terms</a></li>
+							<li class="listingitem">
+								<a href="#"> Affiliate </a>Program
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div
-				class="container w-[740px] h-[84px] m-auto flex flex-col justify-between mt-7">
+				class="iphone:max-sm:hidden container w-[740px] min-h-[84px]  m-auto flex flex-col justify-between mt-7">
 				<p class="font-bold text-smlTitle text-blacky">Site language</p>
-				<ul class="flex justify-between">
-					<li class="liFooter">Română</li>
-					<li class="liFooter">Français</li>
-					<li class="liFooter">Español</li>
-					<li class="liFooter">Deutsch</li>
-					<li class="liFooter">Русский</li>
-					<li class="liFooter">Italiano</li>
-					<li class="liFooter">Français</li>
-					<li class="liFooter">中文</li>
-					<li class="liFooter">Čeština</li>
-					<li class="liFooter">हिन्दी</li>
+				<ul class="flex justify-between ">
+	
+						<li class="liFooter">Română</li>
+						<li class="liFooter">Français</li>
+						<li class="liFooter">Español</li>
+						<li class="liFooter">Deutsch</li>
+						<li class="liFooter">Русский</li>
+					</span>
+		
+						<li class="liFooter">Italiano</li>
+						<li class="liFooter">Français</li>
+						<li class="liFooter">中文</li>
+						<li class="liFooter">Čeština</li>
+						<li class="liFooter">हिन्दी</li>
+				</ul>
+			</div>
+			<div
+				class="hidden iphone:max-sm:flex container w-[740px] min-h-[84px] iphone:max-sm:w-full  m-auto  flex-col justify-between mt-7 iphone:max-sm:text-center">
+				<p class="font-bold text-smlTitle text-blacky">Site language</p>
+				<ul class="flex justify-between iphone:max-sm:justify-evenly iphone:max-sm:mt-4">
+					<span class="firstPhase iphone:max-sm:block">
+						<li class="liFooter">Română</li>
+						<li class="liFooter">Français</li>
+						<li class="liFooter">Español</li>
+						<li class="liFooter">Deutsch</li>
+						<li class="liFooter">Русский</li>
+					</span>
+					<span class="secondPhase iphone:max-sm:block">
+						<li class="liFooter">Italiano</li>
+						<li class="liFooter">Français</li>
+						<li class="liFooter">中文</li>
+						<li class="liFooter">Čeština</li>
+						<li class="liFooter">हिन्दी</li></span
+					>
 				</ul>
 			</div>
 		</div>
 
 		<div
-			class="container h-[66px] w-[825px] flex justify-between m-auto text-center">
+			class="container h-[66px] w-[825px] flex justify-between m-auto text-center iphone:max-sm:mt-4 iphone:max-sm:pr-2 iphone:max-sm:pl-2">
 			<div class="h-[26px] w-[180px]">
 				<p class="text-[#596966] font-ppMedium text-copyright text-right">
 					Copyright @UIHUT 2022

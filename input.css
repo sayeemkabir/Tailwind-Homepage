@@ -22,12 +22,24 @@
         @apply hover:scale-110 duration-300 hover:text-purple-700 font-fontRoboto
     }
 
+    .menuB2{
+        @apply hover:scale-105 duration-300 hover:text-purple-700 font-fontRoboto text-black font-medium
+    }
+
     .topButtons{
         @apply h-[42px] w-[102px] border border-black mt-10
     }
 
     .banText{
         @apply font-fontRoboto font-medium text-7xl mt-5
+    }
+
+    .banText2{
+        @apply font-fontRoboto font-medium text-4xl
+    }
+
+    .banText3{
+        @apply font-fontRoboto font-medium text-3xl
     }
 
     .endBar{
@@ -39,6 +51,10 @@
         @apply font-fontRoboto text-h2 font-bold
     }
 
+    .heading2-2{
+        @apply font-fontRoboto text-mobile-h2 font-medium
+    }
+
     .enroll-btn{
         @apply w-[182px] h-[58px] bg-paleYellow font-ppMedium text-blacky hover:scale-110 duration-500 hover:text-black rounded-[6px]
     }
@@ -46,6 +62,11 @@
     .pinkInner{
         @apply font-bold text-h3 text-blacky
     }
+
+    .pinkInner2{
+        @apply font-medium text-3xl text-blacky
+    }
+
     .ul-dropdown{
         @apply list-none flex flex-col justify-center space-y-3
     }

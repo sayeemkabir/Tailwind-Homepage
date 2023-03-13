@@ -21,7 +21,8 @@ module.exports = {
         "h3" : ['36px', '46px'],
         "smallText": ['14px', '24px'],
         "smlTitle" : ['22px', '32px'],
-        "copyright" : ['16px', '26px']
+        "copyright" : ['16px', '26px'],
+        "mobile-h2" : ['30px', '36px']
 
       },
 
@@ -31,7 +32,8 @@ module.exports = {
         "blacky" :"#003D31",
         "featBg" : "#FFFAE9",
         "darkPink" : "#FF7D7D",
-        "lightPink" : "#FFBABA"
+        "lightPink" : "#FFBABA",
+        "cyanOpaque" : "rgba(92, 228, 202, 0.7)"
       },
 
       "spacing" : {
@@ -46,6 +48,10 @@ module.exports = {
 
       "container" : {
         "center" : true
+      },
+
+      "screens" : {
+        "iphone" : "390px"
       }
 
       
